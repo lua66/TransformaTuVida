@@ -1,0 +1,193 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #141E30, #243B55);
+  color: white;
+  min-height: 100vh;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 100px 20px 60px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.hero p {
+  max-width: 700px;
+  margin: auto;
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+/* SECCIÓN FORMULARIO */
+.formulario-seccion {
+  background: white;
+  color: #333;
+  padding: 80px 20px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+}
+
+.formulario-seccion h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 1.8rem;
+}
+
+/* FORM */
+form {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+input,
+textarea {
+  padding: 15px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  font-family: inherit;
+  font-size: 1rem;
+  transition: 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #00E676;
+  box-shadow: 0 0 8px rgba(0, 230, 118, 0.4);
+}
+
+textarea {
+  resize: none;
+  height: 120px;
+}
+
+/* BOTÓN ENVIAR */
+button {
+  background: #00E676;
+  color: #111;
+  padding: 15px;
+  border: none;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background: #1DE9B6;
+  transform: translateY(-3px);
+}
+
+/* BLOQUE DESBLOQUEO */
+#accesoSemana {
+  text-align: center;
+  margin-top: 40px;
+}
+
+#accesoSemana h3 {
+  margin-bottom: 20px;
+}
+
+#accesoSemana a {
+  display: inline-block;
+  background: #141E30;
+  color: white;
+  padding: 14px 35px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+#accesoSemana a:hover {
+  background: #243B55;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .formulario-seccion {
+    padding: 60px 20px;
+  }
+}
+/* LOGO FIJO */
+.logo-esquina {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 5px 18px rgba(0,0,0,0.4);
+  z-index: 1000;
+}
+
+/* Responsive móvil */
+@media (max-width: 768px) {
+  .logo-esquina {
+    width: 45px;
+    height: 45px;
+    top: 12px;
+    left: 12px;
+  }
+}
+.volver-semana {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.btn-volver {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 28px;
+  border-radius: 25px;
+  background: transparent;
+  border: 2px solid #00E676;
+  color: #00E676;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.btn-volver:hover {
+  background: #00E676;
+  color: #111;
+}
+.btn-secundario {
+  display: inline-block;
+  background: #00E676;
+  color: #111;
+  padding: 15px 40px;
+  border-radius: 35px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+.btn-secundario:hover {
+  transform: translateY(-3px);
+  background: #1DE9B6;
+}
