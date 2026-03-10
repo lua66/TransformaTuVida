@@ -101,6 +101,7 @@ body {
   transform: translateY(-3px);
 }
 
+
 /* LOGO FIJO */
 .logo-esquina {
   position: fixed;
@@ -166,4 +167,5 @@ color:#111;
 text-align:center;
 padding:10px;
 font-weight:600;
+
 }
